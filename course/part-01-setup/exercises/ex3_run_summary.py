@@ -20,3 +20,7 @@ failed = 2
 skipped = 1
 
 # TODO: print the four lines
+print("Passed:", passed)
+print("Failed:", failed)
+print("Skipped:", skipped)
+print("Total:", passed + failed + skipped)

@@ -14,7 +14,9 @@ Run it with:
 """
 
 # TODO: put your details between the quotes
-name = ""
-role = ""
+name = "Isabel Duarte"
+role = "QA Tester"
 
 # TODO: print the two lines
+print("Name:", name)
+print("Role:", role)
