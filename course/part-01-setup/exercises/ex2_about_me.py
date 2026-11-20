@@ -13,8 +13,10 @@ Run it with:
     uv run python course/part-01-setup/exercises/ex2_about_me.py
 """
 
-# TODO: put your details between the quotes
-name = ""
-role = ""
 
-# TODO: print the two lines
+name = "Isabel Duarte"
+role = "QA Tester"
+
+
+print("Name:", name)
+print("Role:", role)
