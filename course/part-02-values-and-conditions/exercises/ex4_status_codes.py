@@ -30,18 +30,28 @@ should_retry(status_code)
 
 
 def classify(status_code):
-    # TODO: replace the line below with if / elif / else
-    return None
+    if status_code >=100 and status_code <= 199:
+        return "informational"
+    elif status_code >=200 and status_code <= 299:
+        return "success"
+    elif status_code >=300 and status_code <= 399:
+        return "redirect"
+    elif status_code >=400 and status_code <= 499:
+        return "client error"
+    elif status_code >=500 and status_code <= 599:
+        return "server error"
+    else:
+        return "unknown"
 
 
 def describe(status_code):
-    # TODO: replace the line below
-    return None
+    
+    return f"{status_code} {classify(status_code)}"
 
 
 def should_retry(status_code):
-    # TODO: replace the line below
-    return None
+    if status_code > 429:
+        return True
 
 
 # Try your functions.
