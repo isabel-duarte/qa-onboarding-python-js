@@ -22,7 +22,7 @@ priority_is_valid(priority)
 
 def title_is_valid(title):
     
-    return  3 >= len(title.strip()) <120
+    return  3 <= len(title.strip()) <=120
 
 
 def priority_is_valid(priority):

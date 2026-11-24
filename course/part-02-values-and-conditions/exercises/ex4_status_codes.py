@@ -46,12 +46,16 @@ def classify(status_code):
 
 def describe(status_code):
     
-    return f"{status_code} {classify(status_code)}"
+    return f"{status_code}: {classify(status_code)}"
 
 
 def should_retry(status_code):
-    if status_code > 429:
+    if status_code == 429:
         return True
+    elif status_code >=500 and status_code <= 599:
+        return True
+    else:
+        return False
 
 
 # Try your functions.
