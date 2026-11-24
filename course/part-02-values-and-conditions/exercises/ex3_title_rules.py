@@ -21,13 +21,14 @@ priority_is_valid(priority)
 
 
 def title_is_valid(title):
-    # TODO: replace the line below
-    return None
+    
+    return  3 <= len(title.strip()) <=120
 
 
 def priority_is_valid(priority):
-    # TODO: replace the line below. `or` joins whole comparisons: a == "x" or a == "y".
-    return None
+    if priority == "low" or priority == "medium" or priority == "high" or priority == "critical":
+        return True
+    return False
 
 
 # Try your functions.
